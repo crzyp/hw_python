@@ -5,5 +5,5 @@ def calculate_time(func):
         x = time.time()
         func()
         y = time.time()
-        print(str('Total time ' + (y - x)))
+        print("Total time {x - y}")
     return wrapper()
