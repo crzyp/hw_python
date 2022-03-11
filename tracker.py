@@ -1,6 +1,6 @@
 def func_counter(func):
-    counter = 0
-    def count():
-        func()
-        counter += 1
-    return count()
+    count.counter = 0
+    def count(args):
+        count.counter += 1
+        return func(args)
+    return count
